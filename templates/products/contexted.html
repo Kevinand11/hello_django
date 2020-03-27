@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <p>My name is {{ name }}</p>
+    <p>I have ${{ account }} in my account. Sad</p>
+    {% if isAdult %}
+        <p>I am an adult</p>
+    {% else %}
+        <p>I am a kid</p>
+    {% endif %}
+    <ul>
+        {% for lang in languages %}
+            <li>{{ lang }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,1 @@
+print('Serving django HelloWorld project')

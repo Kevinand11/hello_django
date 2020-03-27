@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <h1>Extended Page</h1>
+    <ul>
+        {% for product in products %}
+            <li>
+                <p>{{ product.title }}</p>
+                <p>{{ product.description }}</p>
+                <p>{{ product.price }}</p>
+                <p>{{ product.summary }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
